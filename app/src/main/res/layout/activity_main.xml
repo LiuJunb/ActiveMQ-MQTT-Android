@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="activemq.xmg.com.activemq_mqtt.activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tv_client_id"
+            android:layout_width="100sp"
+            android:layout_height="match_parent"
+            android:text="Client ID:"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginRight="20dp"
+            />
+        <EditText
+            android:id="@+id/ed_client_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="输入用户的id"
+            android:text="liujun"
+            android:textSize="23sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tv_server"
+            android:layout_width="100sp"
+            android:layout_height="match_parent"
+            android:text="Server ID:"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginRight="20dp"
+            />
+        <EditText
+            android:id="@+id/ed_server"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="输入服务器IP地址"
+            android:text="192.168.80.238"
+            android:textSize="23sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tv_port"
+            android:layout_width="100sp"
+            android:layout_height="match_parent"
+            android:text="Port ID:"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginRight="20dp"
+            />
+        <EditText
+            android:id="@+id/ed_port"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="输入服务器端口号"
+            android:text="1883"
+            android:textSize="23sp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_connect"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="23sp"
+        android:text="连接服务器-AcitiveMQ"
+        />
+
+</LinearLayout>
